@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { DatePipe } from '@angular/common';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -9,8 +9,8 @@ export class HeaderComponent {
   headerTitle: string;
   imageTitle: string;
   constructor(){
-  this.headerTitle = "hppp"
-  this.imageTitle = ""
+  this.headerTitle = ""
+  this.imageTitle = "https://angular.io/assets/images/logos/angular/shield-large.svg"
   }
 }
 

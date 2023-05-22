@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Employee } from './models/employee.model';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,18 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'lab2';
+  employees: Array<Employee> =[
+    {
+      "id": 1,
+      "firstName": "hiep",
+      "lastName": "phan",
+      "birthdate": "25-08-2003",
+      "phoneNumber": "0971080029",
+      "gender": "",
+      "company": "abcccc",
+      "salary": 50
+    }
+  ]
 }
+
+
