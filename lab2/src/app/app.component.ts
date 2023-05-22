@@ -11,8 +11,8 @@ export class AppComponent {
   employees: Array<Employee> =[
     {
       "id": 1,
-      "firstName": "hiep",
-      "lastName": "phan",
+      "firstName": "phan huy",
+      "lastName": "hiep",
       "birthdate": "25-08-2003",
       "phoneNumber": "0971080029",
       "gender": "",
