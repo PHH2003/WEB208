@@ -12,6 +12,9 @@ import { DashboardComponent } from './pages/admin/dashboard/dashboard.component'
 import { ProductsComponent } from './pages/admin/products/products.component';
 import { LayoutAdminComponent } from './components/layouts/layout-admin/layout-admin.component';
 import { LayoutClientComponent } from './components/layouts/layout-client/layout-client.component';
+import { LoginComponent } from './pages/login/login.component';
+import { RegisterComponent } from './pages/register/register.component';
+import { ProductDetailComponent } from './pages/product-detail/product-detail.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,10 @@ import { LayoutClientComponent } from './components/layouts/layout-client/layout
     DashboardComponent,
     ProductsComponent,
     LayoutAdminComponent,
-    LayoutClientComponent
+    LayoutClientComponent,
+    LoginComponent,
+    RegisterComponent,
+    ProductDetailComponent
   ],
   imports: [
     BrowserModule,

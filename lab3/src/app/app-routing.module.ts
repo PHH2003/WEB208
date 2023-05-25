@@ -7,8 +7,12 @@ import { LayoutAdminComponent } from './components/layouts/layout-admin/layout-a
 import { LayoutClientComponent } from './components/layouts/layout-client/layout-client.component';
 import { DashboardComponent } from './pages/admin/dashboard/dashboard.component';
 import { ProductsComponent } from './pages/admin/products/products.component';
+import { LoginComponent } from './pages/login/login.component';
+import { RegisterComponent } from './pages/register/register.component';
+import { ProductDetailComponent } from './pages/product-detail/product-detail.component';
 
 const routes: Routes = [
+  // client
   {
     path: '',
     component: LayoutClientComponent,
@@ -16,9 +20,12 @@ const routes: Routes = [
       {path: '', redirectTo: 'home', pathMatch: 'full'},
       { path: 'home', component: HomeComponent },
       { path: 'about', component: AboutComponent },
+      { path: 'register', component: RegisterComponent },
+      { path: 'login', component: LoginComponent },
+      { path: 'product/:id', component: ProductDetailComponent },
     ]
   },
-
+  // admin
   {
     path: 'admin',
     component: LayoutAdminComponent,
